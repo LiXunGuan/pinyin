@@ -53,7 +53,7 @@ class Pinyin{
 	 * @return string
 	 */
 	public function firstLetter($config = array()){
-		if($config) $config = array_merge($this->config, $config);
+		$config = array_merge($this->config, $config);
 		$letter = array();
 		foreach ($this->pinyin as $key) {
 			$letter[] = strtolower(substr($key,0,1));
@@ -67,7 +67,7 @@ class Pinyin{
 	 * @return string
 	 */
 	public function full($config = array()){
-		if($config) $config = array_merge($this->config, $config);
+		$config = array_merge($this->config, $config);
 		return implode($config['delimiter'], $this->pinyin);
 	}
 
