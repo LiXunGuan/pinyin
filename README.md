@@ -6,7 +6,6 @@
 ```
 composer.phar install
 
-打开app.php 给aliases  加上  'Qiniu'  => 'Lixunguan\Qiniu\Storage'
 ```
 
 # 获取拼音首字母
